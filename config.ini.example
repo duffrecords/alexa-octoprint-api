@@ -1,0 +1,11 @@
+[aws]
+aws_region = us-east-1
+
+[octoprint]
+api_key = YOUR_OCTOPRINT_API_KEY
+endpoint = https://YOUR_OCTOPRINT_SERVER
+bed_size = 235
+xy_speed = 6000
+z_speed = 200
+max_nozzle_temp = 240
+max_bed_temp = 80

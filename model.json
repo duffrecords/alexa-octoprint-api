@@ -1,0 +1,726 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "octo print",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "HelloWorldIntent",
+                    "slots": [],
+                    "samples": [
+                        "hello",
+                        "how are you",
+                        "say hi world",
+                        "say hi",
+                        "hi",
+                        "say hello world",
+                        "say hello"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "GetPrinterStatusIntent",
+                    "slots": [],
+                    "samples": [
+                        "read the printer status",
+                        "check printer status",
+                        "check the printer status",
+                        "tell me the printer status",
+                        "what is the printer status",
+                        "get the status of the printer",
+                        "status of the printer",
+                        "printer status",
+                        "get printer status",
+                        "what's the printer status",
+                        "get the printer status"
+                    ]
+                },
+                {
+                    "name": "GetBedTemperatureIntent",
+                    "slots": [],
+                    "samples": [
+                        "read the bed temperature",
+                        "check bed temp",
+                        "check bed temperature",
+                        "check the bed temperature",
+                        "how hot is the bed",
+                        "what is the temperature of the bed",
+                        "what's the temperature of the bed",
+                        "temperature of the bed",
+                        "bed temperature",
+                        "tell me the bed temperature",
+                        "get bed temperature",
+                        "get the bed temperature",
+                        "what is the bed temperature",
+                        "what's the bed temperature"
+                    ]
+                },
+                {
+                    "name": "GetToolTemperatureIntent",
+                    "slots": [],
+                    "samples": [
+                        "check the extruder temperature",
+                        "what is the extruder temperature",
+                        "what's the extruder temperature",
+                        "get the extruder temperature",
+                        "read the hot end temperature",
+                        "read the nozzle temperature",
+                        "read the tool temperature",
+                        "check hot end temp",
+                        "check nozzle temp",
+                        "check tool temp",
+                        "check the hot end temperature",
+                        "check the nozzle temperature",
+                        "check the tool temperature",
+                        "what's the temperature of the hot end",
+                        "what's the temperature of the nozzle",
+                        "what's the temperature of the tool",
+                        "how hot is the hot end",
+                        "how hot is the nozzle",
+                        "how hot is the tool",
+                        "tell me the hot end temperature",
+                        "tell me the nozzle temperature",
+                        "tell me the tool temperature",
+                        "get the temperature of the hot end",
+                        "get the temperature of the nozzle",
+                        "get the temperature of the tool",
+                        "get the hot end temperature",
+                        "get the nozzle temperature",
+                        "get the tool temperature",
+                        "what's the hot end temperature",
+                        "what's the nozzle temperature",
+                        "what's the tool temperature",
+                        "get hot end temperature",
+                        "get nozzle temperature",
+                        "get tool temperature"
+                    ]
+                },
+                {
+                    "name": "StartPrintJobIntent",
+                    "slots": [],
+                    "samples": [
+                        "begin printing now",
+                        "start printing now",
+                        "start the print job now",
+                        "begin printing",
+                        "start printing",
+                        "start a print job",
+                        "start the print job"
+                    ]
+                },
+                {
+                    "name": "StopPrintJobIntent",
+                    "slots": [],
+                    "samples": [
+                        "end print job",
+                        "end the print job ",
+                        "stop print",
+                        "cancel print",
+                        "cancel printing now",
+                        "cancel printing",
+                        "cancel the print job",
+                        "stop printing immediately",
+                        "stop printing now",
+                        "stop the print job now",
+                        "stop print job",
+                        "stop printing",
+                        "stop all print jobs",
+                        "stop a print job",
+                        "stop the print job"
+                    ]
+                },
+                {
+                    "name": "PausePrintJobIntent",
+                    "slots": [],
+                    "samples": [
+                        "pause print",
+                        "pause printing",
+                        "pause print job",
+                        "pause the print job"
+                    ]
+                },
+                {
+                    "name": "ResumePrintJobIntent",
+                    "slots": [],
+                    "samples": [
+                        "keep printing",
+                        "continue printing",
+                        "continue the print job",
+                        "resume print",
+                        "resume printing",
+                        "resume print job",
+                        "resume the print job"
+                    ]
+                },
+                {
+                    "name": "SetBedTemperatureIntent",
+                    "slots": [
+                        {
+                            "name": "temperature",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "heat the bed up to {temperature} degrees",
+                        "heat the bed up to {temperature}",
+                        "warm the bed up to {temperature} degrees",
+                        "warm the bed up to {temperature}",
+                        "warm up the bed to {temperature}",
+                        "heat bed to {temperature}",
+                        "change the bed to {temperature}",
+                        "heat the bed to {temperature} degrees",
+                        "heat the bed to {temperature}",
+                        "set the bed to {temperature} degrees celsius",
+                        "set bed to {temperature} degrees",
+                        "set bed to {temperature}",
+                        "set the bed to {temperature} degrees",
+                        "set the bed to {temperature}",
+                        "set the bed temperature to {temperature} degrees",
+                        "set the bed temperature to {temperature}"
+                    ]
+                },
+                {
+                    "name": "SetToolTemperatureIntent",
+                    "slots": [
+                        {
+                            "name": "temperature",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "heat the extruder up to {temperature}",
+                        "heat the hot end up to {temperature}",
+                        "heat the nozzle up to {temperature}",
+                        "heat the tool up to {temperature}",
+                        "warm up the extruder to {temperature}",
+                        "warm up the hot end to {temperature}",
+                        "warm up the nozzle to {temperature}",
+                        "warm up the tool to {temperature}",
+                        "heat the extruder to {temperature}",
+                        "heat the hot end to {temperature}",
+                        "heat the nozzle to {temperature}",
+                        "heat the tool to {temperature}",
+                        "set the extruder to {temperature} degrees celsius",
+                        "set the hot end to {temperature} degrees celsius",
+                        "set the nozzle to {temperature} degrees celsius",
+                        "set the tool to {temperature} degrees celsius",
+                        "set extruder to {temperature}",
+                        "set the extruder to {temperature} degrees",
+                        "set the extruder to {temperature}",
+                        "set hot end to {temperature}",
+                        "set nozzle to {temperature}",
+                        "set tool to {temperature}",
+                        "set the hot end to {temperature} degrees",
+                        "set the nozzle to {temperature} degrees",
+                        "set the tool to {temperature} degrees",
+                        "set the hot end to {temperature}",
+                        "set the nozzle to {temperature}",
+                        "set the tool to {temperature}"
+                    ]
+                },
+                {
+                    "name": "GetPrintProgressIntent",
+                    "slots": [],
+                    "samples": [
+                        "what's the print job progress",
+                        "what is the print job progress",
+                        "check the print job's progress",
+                        "check the print job progress",
+                        "check the progress of my print job",
+                        "what is the progress of my print job",
+                        "what's the progress of my print job",
+                        "report the progress of my print",
+                        "report the print progress",
+                        "read the print progress",
+                        "check on my print progress",
+                        "what is the progress of my print",
+                        "what is my print progress",
+                        "check my print progress",
+                        "what is the progress of the print",
+                        "what is the print progress",
+                        "check the progress of the print",
+                        "check the print progress",
+                        "what's the printing progress",
+                        "what's the print progress",
+                        "get the print progress"
+                    ]
+                },
+                {
+                    "name": "GetTotalPrintTimeIntent",
+                    "slots": [],
+                    "samples": [
+                        "read the total print time",
+                        "report total print time",
+                        "check total print time",
+                        "get total print time",
+                        "what is the total print time",
+                        "what's the total print time",
+                        "check the total print time",
+                        "get the total print time"
+                    ]
+                },
+                {
+                    "name": "GetPrintTimeLeftIntent",
+                    "slots": [],
+                    "samples": [
+                        "how much more time until my print is complete",
+                        "how much more time until my print is done",
+                        "how much longer until my print is done",
+                        "how much longer until the print is done",
+                        "how much longer is the print",
+                        "how much longer will the print take",
+                        "get the remaining print time",
+                        "get remaining print time",
+                        "get the print time remaining",
+                        "check remaining print time",
+                        "check print time remaining",
+                        "check how much print time is left",
+                        "check print time left",
+                        "how much print time is left",
+                        "get the print time left"
+                    ]
+                },
+                {
+                    "name": "GetElapsedPrintTimeIntent",
+                    "slots": [],
+                    "samples": [
+                        "how long has this been printing so far",
+                        "how much time has it been printing",
+                        "how long has it been printing",
+                        "how long has the print been going",
+                        "check the elapsed print time",
+                        "check elapsed print time",
+                        "get the elapsed print time",
+                        "get elapsed print time"
+                    ]
+                },
+                {
+                    "name": "HomeAllAxesIntent",
+                    "slots": [],
+                    "samples": [
+                        "zero all axes",
+                        "set all axes to home",
+                        "home all axis",
+                        "home all axes"
+                    ]
+                },
+                {
+                    "name": "ProbeBedIntent",
+                    "slots": [],
+                    "samples": [
+                        "make the bed level",
+                        "check if the bed is level",
+                        "make sure the bed is level",
+                        "do a bed leveling probe",
+                        "start bed leveling",
+                        "do a bed leveling",
+                        "level the bed",
+                        "check the bed level",
+                        "probe bed",
+                        "probe the bed"
+                    ]
+                },
+                {
+                    "name": "TurnBedOffIntent",
+                    "slots": [],
+                    "samples": [
+                        "set the print bed to off",
+                        "set the bed to off ",
+                        "shut the bed temperature off",
+                        "turn off the bed temperature",
+                        "turn off the print bed temperature",
+                        "turn the bed temperature off",
+                        "turn the print bed temperature off",
+                        "cool the print bed down",
+                        "cool the bed down",
+                        "let the bed cool off",
+                        "let the print bed cool off",
+                        "cool down the print bed",
+                        "cool down the bed",
+                        "turn the print bed off",
+                        "shut the print bed off",
+                        "stop heating the print bed",
+                        "stop heating the bed",
+                        "shut the bed off",
+                        "turn the bed off"
+                    ]
+                },
+                {
+                    "name": "TurnToolOffIntent",
+                    "slots": [],
+                    "samples": [
+                        "let the extruder cool off",
+                        "let the hot end cool off",
+                        "let the nozzle cool off",
+                        "let the tool cool down",
+                        "cool down the extruder",
+                        "cool down the hot end",
+                        "cool down the nozzle",
+                        "cool down the tool",
+                        "cool off the extruder ",
+                        "cool off the hot end ",
+                        "cool off the nozzle",
+                        "cool off the tool",
+                        "set the extruder temperature to off",
+                        "set the hot end temperature to off",
+                        "set the nozzle temperature to off",
+                        "set the tool temperature to off",
+                        "set the extruder to off",
+                        "set the hot end to off",
+                        "set the nozzle to off",
+                        "set the tool to off",
+                        "stop heating the extruder",
+                        "stop heating the hot end",
+                        "stop heating the nozzle",
+                        "stop heating the tool",
+                        "shut the extruder off",
+                        "shut the hot end off",
+                        "shut the nozzle off",
+                        "shut the tool off",
+                        "turn the extruder off",
+                        "turn the hot end off ",
+                        "turn the nozzle off",
+                        "turn the tool off"
+                    ]
+                },
+                {
+                    "name": "ProbeUpIntent",
+                    "slots": [],
+                    "samples": [
+                        "move the sensor up",
+                        "lift the sensor up",
+                        "bring the b l touch up",
+                        "bring the probe up",
+                        "lift the b l touch up",
+                        "lift the probe up"
+                    ]
+                },
+                {
+                    "name": "ProbeDownIntent",
+                    "slots": [],
+                    "samples": [
+                        "bring the b l touch down",
+                        "move the b l touch down",
+                        "bring the sensor down",
+                        "move the sensor down",
+                        "bring the probe down",
+                        "move the probe down"
+                    ]
+                },
+                {
+                    "name": "ProbeReleaseIntent",
+                    "slots": [],
+                    "samples": [
+                        "release the bed leveling probe",
+                        "release the bed leveling sensor",
+                        "reset the bed leveling probe",
+                        "reset the bed leveling sensor",
+                        "reset the b l touch alarm",
+                        "reset the b l touch",
+                        "release the b l touch alarm",
+                        "release the b l touch",
+                        "reset the probe alarm",
+                        "reset the probe",
+                        "release the probe alarm status",
+                        "cancel the probe alarm",
+                        "undo the probe alarm",
+                        "release the probe alarm",
+                        "release the probe"
+                    ]
+                },
+                {
+                    "name": "SaveAllSettingsIntent",
+                    "slots": [],
+                    "samples": [
+                        "save my current settings",
+                        "save all the current settings",
+                        "save the current settings",
+                        "save my settings",
+                        "save these settings",
+                        "save the settings",
+                        "save settings",
+                        "save all settings"
+                    ]
+                },
+                {
+                    "name": "HomeXYAxesIntent",
+                    "slots": [],
+                    "samples": [
+                        "reset the x and y axes to the home position",
+                        "reset the x and y axis to home",
+                        "reset the x and y axes",
+                        "reset the x and y axis",
+                        "set the x and y axis to the home position",
+                        "set x and y to home position",
+                        "set the x and y axes to zero",
+                        "set the x and y axes to home",
+                        "home the x and y axes",
+                        "home x y axes",
+                        "home x y axis",
+                        "home x and y axis",
+                        "home x and y axes"
+                    ]
+                },
+                {
+                    "name": "HomeZAxisIntent",
+                    "slots": [],
+                    "samples": [
+                        "reset the z axis to zero",
+                        "reset the z axis to home",
+                        "set z axis to home",
+                        "reset the z axis",
+                        "set the z axis to zero",
+                        "set the z axis to home",
+                        "home the z axis",
+                        "home z axis"
+                    ]
+                },
+                {
+                    "name": "TorchOnIntent",
+                    "slots": [],
+                    "samples": [
+                        "lights on",
+                        "turn on the LEDs",
+                        "turn on the LED",
+                        "turn on the lights",
+                        "turn on the light",
+                        "turn on the torch",
+                        "turn the LEDs on",
+                        "turn the LED on",
+                        "turn the lamp on",
+                        "turn the light on",
+                        "set the torch on",
+                        "turn the torch on",
+                        "torch on"
+                    ]
+                },
+                {
+                    "name": "TorchOffIntent",
+                    "slots": [],
+                    "samples": [
+                        "shut off the LEDs",
+                        "shut off the LED",
+                        "shut the LEDs off",
+                        "shut the LED off",
+                        "turn off the LED",
+                        "turn off the LEDs",
+                        "turn the LEDs off",
+                        "turn the LED off",
+                        "shut the light off",
+                        "shut off the light",
+                        "shut the torch off",
+                        "shut off the torch",
+                        "turn off the lamp",
+                        "turn the lamp off",
+                        "turn off the light",
+                        "turn the light off",
+                        "turn off the torch",
+                        "turn the torch off",
+                        "lights off",
+                        "torch off"
+                    ]
+                },
+                {
+                    "name": "MoveBedForwardIntent",
+                    "slots": [],
+                    "samples": [
+                        "bring the print bed all the way to me",
+                        "bring the print bed toward me",
+                        "bring the bed toward me",
+                        "bring the bed out",
+                        "move the bed out",
+                        "move the bed all the way out",
+                        "move the bed all the way forward",
+                        "move the bed forward",
+                        "bring the printer bed all the way forward",
+                        "bring the bed all the way forward",
+                        "bring the print bed forward",
+                        "bring the bed forward"
+                    ]
+                },
+                {
+                    "name": "MovePrintHeadIntent",
+                    "slots": [
+                        {
+                            "name": "direction",
+                            "type": "Directions"
+                        },
+                        {
+                            "name": "distance",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "go {direction} {distance} millimeter",
+                        "move {direction} by {distance} millimeter",
+                        "move {distance} millimeter {direction}",
+                        "move {direction} {distance} millimeter",
+                        "move the print head {direction} {distance} millimeter",
+                        "go {distance} millimeters {direction}",
+                        "move {distance} millimeters {direction}",
+                        "move {direction} by {distance} millimeters",
+                        "move {direction} {distance} millimeters",
+                        "move the print head {direction} {distance} millimeters"
+                    ]
+                },
+                {
+                    "name": "ExtrudeIntent",
+                    "slots": [
+                        {
+                            "name": "amount",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "squirt out {amount} millimeters of filament",
+                        "squeeze out {amount} millimeters of filament",
+                        "extrude {amount} millimeter of filament",
+                        "extrude {amount} millimeters of filament",
+                        "extrude {amount} millimeters",
+                        "extrude {amount} millimeter"
+                    ]
+                },
+                {
+                    "name": "ThankYouIntent",
+                    "slots": [],
+                    "samples": [
+                        "thanks so much",
+                        "thanks a bunch",
+                        "thank you for helping",
+                        "thanks for your help",
+                        "thanks for the help",
+                        "thanks a lot",
+                        "thank you octo print",
+                        "thank you very much",
+                        "thank you",
+                        "thanks"
+                    ]
+                },
+                {
+                    "name": "DisableStepperMotors",
+                    "slots": [],
+                    "samples": [
+                        "cease all motor functions",
+                        "freeze all motor functions",
+                        "disable all stepper motors",
+                        "stop the stepper motors",
+                        "stop the motors",
+                        "disable motors",
+                        "motors off",
+                        "shut off the motors",
+                        "shut the motors off",
+                        "turn off the motors",
+                        "turn the motors off",
+                        "shut off the stepper motors",
+                        "shut the stepper motors off",
+                        "turn off the stepper motors",
+                        "turn the stepper motors off",
+                        "disable the motors",
+                        "disable the stepper motors",
+                        "disable stepper motors"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "Directions",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "to the right"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "to the left"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "downwards"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "downward"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "upwards"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "upward"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "backwards"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "forwards"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "backward"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "back"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "forward"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "down"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "up"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "right"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "left"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
