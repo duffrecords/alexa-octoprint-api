@@ -494,7 +494,7 @@
                     ]
                 },
                 {
-                    "name": "TorchOnIntent",
+                    "name": "LightsOnIntent",
                     "slots": [],
                     "samples": [
                         "lights on",
@@ -502,18 +502,14 @@
                         "turn on the LED",
                         "turn on the lights",
                         "turn on the light",
-                        "turn on the torch",
                         "turn the LEDs on",
                         "turn the LED on",
                         "turn the lamp on",
-                        "turn the light on",
-                        "set the torch on",
-                        "turn the torch on",
-                        "torch on"
+                        "turn the light on"
                     ]
                 },
                 {
-                    "name": "TorchOffIntent",
+                    "name": "LightsOffIntent",
                     "slots": [],
                     "samples": [
                         "shut off the LEDs",
@@ -526,16 +522,11 @@
                         "turn the LED off",
                         "shut the light off",
                         "shut off the light",
-                        "shut the torch off",
-                        "shut off the torch",
                         "turn off the lamp",
                         "turn the lamp off",
                         "turn off the light",
                         "turn the light off",
-                        "turn off the torch",
-                        "turn the torch off",
-                        "lights off",
-                        "torch off"
+                        "lights off"
                     ]
                 },
                 {
@@ -569,6 +560,9 @@
                         }
                     ],
                     "samples": [
+                        "move the print head {direction}",
+                        "go {direction}",
+                        "move {direction}",
                         "go {direction} {distance} millimeter",
                         "move {direction} by {distance} millimeter",
                         "move {distance} millimeter {direction}",
@@ -636,6 +630,64 @@
                         "disable the motors",
                         "disable the stepper motors",
                         "disable stepper motors"
+                    ]
+                },
+                {
+                    "name": "TorchOnIntent",
+                    "slots": [],
+                    "samples": [
+                        "enable the torch",
+                        "enable torch mode",
+                        "enable torch",
+                        "turn on the torch",
+                        "turn on torch mode",
+                        "torch mode on",
+                        "torch mode",
+                        "set the torch on",
+                        "turn the torch on",
+                        "torch on"
+                    ]
+                },
+                {
+                    "name": "TorchOffIntent",
+                    "slots": [],
+                    "samples": [
+                        "disable the torch",
+                        "disable torch mode",
+                        "disable torch",
+                        "shut the torch off",
+                        "torch mode off",
+                        "turn torch mode off",
+                        "turn off torch mode",
+                        "set the torch off",
+                        "turn the torch off",
+                        "torch off"
+                    ]
+                },
+                {
+                    "name": "SetLedColorIntent",
+                    "slots": [
+                        {
+                            "name": "color",
+                            "type": "AMAZON.Color"
+                        }
+                    ],
+                    "samples": [
+                        "make the lights turn {color}",
+                        "make the leds turn {color}",
+                        "turn the leds {color}",
+                        "change the leds to {color}",
+                        "set the leds to {color}",
+                        "make the light {color}",
+                        "turn the light {color}",
+                        "set the light to {color}",
+                        "change the light to {color}",
+                        "change the lights to {color}",
+                        "make the lights {color}",
+                        "turn the lights {color}",
+                        "turn the lights to {color}",
+                        "set the lights to {color}",
+                        "set the color to {color}"
                     ]
                 }
             ],
